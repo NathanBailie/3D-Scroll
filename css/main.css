@@ -128,3 +128,14 @@ video.frame__media_left {
 	right: 18vw;
 }
 
+.soundButton {
+	width: 30px;
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	transition: 0.25s ease;
+}
+.soundButton.paused {
+	opacity: 0.4;
+}

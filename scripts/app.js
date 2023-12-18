@@ -1,5 +1,6 @@
 "use strict"
 
+// scrolling
 let frames = document.querySelectorAll('.frame');
 let zSpacing = -1000;
 let lastPos = zSpacing / 5;
@@ -23,3 +24,17 @@ window.addEventListener('scroll', () => {
 })
 
 window.scrollTo(0, 1)
+
+// audio
+let soundBtn = document.querySelector('.soundButton');
+let audio = document.querySelector('.audio');
+
+soundBtn.addEventListener('click', () => {
+    soundBtn.classList.toggle('paused');
+    audio.paused ? audio.play() : audio.pause();
+});
+
+window.addEventListener('blur', () => {
+    soundBtn.classList.add('paused');
+    audio.pause();
+})
