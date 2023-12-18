@@ -37,4 +37,4 @@ soundBtn.addEventListener('click', () => {
 window.addEventListener('blur', () => {
     soundBtn.classList.add('paused');
     audio.pause();
-})
+});

@@ -10,7 +10,9 @@
     --side-small: 26;
     --side-big: 36;
     --depth: 4000px;
-	--transition: 0.75s cubic-bezier(.075, .5, 0, 1)
+	--transition: 0.75s cubic-bezier(.075, .5, 0, 1);
+    --bg-color: black;
+    --text-color: white;
 }
 
 @font-face {
@@ -26,8 +28,8 @@
 
 body {
     height: var(--depth);
-    background: black;
-    color: white;
+    background: var(--bg-color);
+    color: var(--text-color);
     font-size: calc(var(--index) * 0.8);
     font-family: Raleway_v22, sans-serif;
     line-height: 1.75;
