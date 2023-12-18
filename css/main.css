@@ -2,9 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --gap: 30px;
+    --side-small: 26;
+    --side-big: 36;
+    --depth: 4000px;
+}
+
+@font-face {
+	font-family: Raleway_v22;
+	src: url('../assets/fonts/raleway-v22-cyrillic-300.woff2');
+	font-weight: 300;
+}
+@font-face {
+	font-family: Raleway_v22;
+	src: url('../assets/fonts/raleway-v22-cyrillic-100.woff2');
+	font-weight: 100;
 }
 
 body {
-    background: #3c3c3c;
+    height: var(--depth);
+    background: black;
+    color: white;
+    font-size: calc(var(--index) * 0.8);
+    font-family: Raleway_v22, sans-serif;
+    line-height: 1.75;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    perspective: 1500px;
+}
+
+.galery {
+    transform-style: preserve-3d;
+    height: 100%;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s ease;
+    will-change: transform;
 }
