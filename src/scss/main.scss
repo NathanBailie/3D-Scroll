@@ -1,0 +1,23 @@
+// libs
+@use "../assets/css-libs/normalize.min.css" as *;
+
+// helpers
+@use "./base/variables.scss" as *;
+@use "./base/mixins.scss" as *;
+@use "./base/base_styles.scss" as *;
+
+// sections
+@use "sections/frame/frame.scss" as *;
+
+
+@font-face {
+	font-family: Raleway_v22;
+	src: url('../assets/fonts/raleway-v22-cyrillic-300.woff2');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Raleway_v22;
+	src: url('../assets/fonts/raleway-v22-cyrillic-100.woff2');
+	font-weight: 100;
+}
