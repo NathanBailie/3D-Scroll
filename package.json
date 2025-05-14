@@ -4,13 +4,15 @@
 	"description": "",
 	"scripts": {
 		"build": "cross-env NODE_ENV=production gulp prod",
-		"dev": "cross-env NODE_ENV=development gulp dev"
+		"dev": "cross-env NODE_ENV=development gulp dev",
+		"deploy": "gh-pages -d build"
 	},
 	"author": "",
 	"type": "module",
 	"devDependencies": {
 		"browser-sync": "^3.0.3",
 		"cross-env": "^7.0.3",
+		"gh-pages": "^6.3.0",
 		"gulp": "^5.0.0",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-clean": "^0.4.0",

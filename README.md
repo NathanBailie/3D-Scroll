@@ -2,7 +2,7 @@
 
 ### 🗨️ Description
 
-This is a creative landing page with a unique 3D scrolling effect. The project features smooth parallax animations, background music control, and an immersive visual experience created through the combination of images and video content. The 3D effect is achieved by manipulating perspective and transform properties based on scroll position.
+This is a creative landing page with a unique 3D scrolling effect. The project features smooth parallax animations, background music control, and an immersive visual experience created through the combination of images and video content. The 3D effect is achieved by manipulating perspective and transform properties based on scroll position. This project was created following a tutorial from the [WebDesign Master](https://www.youtube.com/watch?v=GLbI7BGdQ3o) YouTube channel.
 
 ---
 
